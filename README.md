@@ -173,11 +173,11 @@ they want to create `const` objects. For example:
 ```c++
 Person one;
 one.setyearofbirth(1923);    // allowed, one is not const and setyearofbirth
-							 // isn't either, so that's ok
+                             // isn't either, so that's ok
 
 Person const two;
 two.setyearofbirth(1969);    // not allowed, two is const but setyearofbirth
-						     // isn't
+                             // isn't
 ```
 
 ## Constructors and destructors
