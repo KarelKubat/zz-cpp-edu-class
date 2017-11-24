@@ -310,7 +310,7 @@ int main() {
 
 ## Initializing class variables in constructors
 
-One of the job of constructors is often to initialize class variables to
+One of the jobs of constructors is often to initialize class variables to
 values. In the case of the default constructor these will be most likely
 defaults.
 
@@ -349,7 +349,7 @@ Person::Person(string const &fn, string const &ln, unsigned int yob):
 ```
 
 Note that the initialization of the class data occurs even before the open-brace
-character. Any other code of the constructor won't even be executed before the
+character. Any code of the constructor will only be executed after the
 initialization occurs.
 
 Why is this better than an assignment? 
